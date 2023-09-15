@@ -123,5 +123,19 @@ a{
     padding: 0 30px;
     text-align: center;
 }
-
+/* --------gallery-section------ */
+.gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2px;
+    row-gap: 2px;
+    
+}
+.gallery-section .gallery-img{
+    max-width: calc(25% - 2px);
+    max-height: 330px;
+}
+.gallery-section .gallery-img{
+   width:100% ;
+}
 
