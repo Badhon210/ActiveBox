@@ -188,6 +188,46 @@ a{
     visibility: visible;
     transition: 0.4s;
 }
+/* ----------idantity-section---- */
+.idantity-section .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
 
+}
+.idantity-section .container .img-text{
+    width:25%;
+
+}
+.idantity-section .container .img-text h3{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+.idantity-section .container .img-text h4{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e84545;
+    margin-bottom: 30px;
+}
+.idantity-section .container .img-text p{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #6c7279;
+    margin-bottom: 52px;
+    padding-right: 20px;
+}
+
+.icon-bottom a{
+    border:1px solid #e5ebf1;
+    padding: 10px 10px;
+    color: #6c7279;
+    margin-right: 5px;
+    
+}
 
 
