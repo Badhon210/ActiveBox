@@ -238,6 +238,10 @@ a{
 .ad-section .ad{
     width: 50%;
 }
+.ad-section .ad img{
+    width: 100%;
+    height: 100%;
+}
 .ad-section .ad-text{
     background-color: #53354a;
     padding-top: 120px;
@@ -262,7 +266,6 @@ a{
 }
 .o-dot{
     display: flex;
-    align-items: center;
     margin-top: 64px;
     margin-left: 210px;
 }
@@ -273,14 +276,42 @@ a{
     background-color: #7a7777;
     margin-right: 8px;
 }
-.dotted a{
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color:#fff;
-    visibility: hidden;
-}
-.o-dot .dotted:hover a{
+
+.o-dot .dotted:hover {
+    background-color: #fff;
     transition: 0.3s;
     visibility: visible;
+} 
+/* --------download-section------- */
+.download-section .container{
+    padding: 100px 0;
+
+}
+.download-section .container h2{
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #2d3033;
+}
+.download-section .container h5{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 22px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+.download-section .container a{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 18px 90px;
+    background-color: #e84545;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffff;
 }
