@@ -348,6 +348,28 @@ a{
     border: 2px solid #fff;
     color: #fff;
 }
-.about-section .container .about-text p{
+.about-section .container .text p{
+    color: #fff;
+}
+/* ---------last-page---- */
+.last-page{
+    background-color: #313454;
+}
+.last-page .container{
+    padding: 29px 0;
+}
+.last-page .container p{
+    text-align: center;
+    font-size: 14px;
+    padding: 0 420px;
+    font-family: 'Open Sans', sans-serif;
+    color: #808080;
 
+}
+.last-page .container p .fa-solid{
+    font-size: 14px;
+    color: red;
+}
+.last-page .container p samp{
+    color: #fff;
 }
