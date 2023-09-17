@@ -315,3 +315,39 @@ a{
     transform: translateX(-50%);
     color: #ffff;
 }
+/* ------about-section---- */
+.about-section {
+    background-color: #3a3e64;
+    width: 100%;
+}
+.about-section .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0 110px 0;
+}
+.about-section .container .text{
+    width: 31%;
+    text-align: center
+}
+.about-section .container .text h2{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 22px;
+}
+.about-section .container .Location-text p{
+    padding: 0 90px;
+    color: #e5ebf1;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.about-section .container .text a{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.about-section .container .about-text p{
+
+}
