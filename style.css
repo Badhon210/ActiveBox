@@ -11,7 +11,7 @@
 .container{
     padding: 0 15px;
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 
     
 }
@@ -38,8 +38,18 @@ a{
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
 }
+.header-section .container .ActiveBox img{
+    width: 100%;
+}
 .header-menu .menu{
     display: flex;
+}
+.manu-icon{
+    display: none;
+}
+.manu-icon .fa-solid{
+    font-size: 28px;
+    color: #fff;
 }
 .header-menu .menu li a{
     font-size: 13px;
@@ -101,6 +111,10 @@ a{
     display: flex;
     flex-wrap: wrap;
     row-gap: 74px;
+    justify-content: space-between;
+}
+.service-section .container .service-item a img{
+    width: 100%;
 }
 .service-section .container .service-item{
     max-width: 33.33%;
@@ -113,7 +127,7 @@ a{
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin-top: 34px;
+    margin-top: 34px; 
     margin-bottom: 26px;
     text-align: center;
     text-transform: uppercase;
@@ -138,13 +152,13 @@ a{
 .gallery-section .gallery-img{
     display: flex;
     max-width: calc(25% - 1px);
-    max-height: 320px;
+    /* max-height: 320px; */
     cursor: pointer;
     position: relative;  
 }
 .gallery-section .gallery-img img {
-   width:100% ;
-   height: 100%;
+   max-width: 100%;
+   max-height: 100%;
 }
 .gallery-section .gallery-img .overley{
     width: 100%;
@@ -190,25 +204,30 @@ a{
     visibility: visible;
     transition: 0.4s;
 }
-/* ----------idantity-section---- */
-.idantity-section .container{
+/* ----------.Team-section---- */
+.Team-section .container{
     display: flex;
     justify-content: space-between;
-    padding: 100px 0;
+    flex-wrap: wrap;
+    padding-top: 100px 0;
 
 }
-.idantity-section .container .img-text{
-    width:25%;
+.Team-section .container .img-text{
+    max-width: 25%;
 
 }
-.idantity-section .container .img-text h3{
+.Team-section .container .img-text img{
+    width: 100%;
+
+}
+.Team-section .container .img-text h3{
     font-size: 22px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 13px;
 }
-.idantity-section .container .img-text h4{
+.Team-section .container .img-text h4{
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -216,7 +235,7 @@ a{
     color: #e84545;
     margin-bottom: 30px;
 }
-.idantity-section .container .img-text p{
+.Team-section .container .img-text p{
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     color: #6c7279;
@@ -234,55 +253,58 @@ a{
 /* ------ad-section---- */
 .ad-section{
     display: flex;
+    position: relative;
 }
-.ad-section .ad{
-    width: 50%;
+.ad-section .image-itam{
+  max-width: 50%;
+    
 }
-.ad-section .ad img{
+.ad-section .image-itam img{
     width: 100%;
     height: 100%;
 }
-.ad-section .ad-text{
-    background-color: #53354a;
-    padding-top: 120px;
-    padding-left: 80px;
-    padding-right:330px ;
+.ad-section .content-itam{
+   max-width: 50%;
+   background-color: #53354A;
 }
-.ad-section .ad-text p{
-    
-    font-style: italic;
+.ad-section .content-itam h3{
     font-size: 36px;
-    margin-bottom: 28px;
+    font-style: italic;
     color: #fff;
-    
-    
+    margin-top: 120px;
+    margin-bottom: 42px;
+    padding-left: 84px;
+    padding-right: 200px;
 }
-.ad-section .ad-text h4{
-    font-size: 13px;
+.ad-section .content-itam p{
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
-}
-.o-dot{
-    display: flex;
-    margin-top: 64px;
-    margin-left: 210px;
-}
- .dotted{
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: #7a7777;
-    margin-right: 8px;
-    cursor: pointer;
+    padding-left: 84px;
+    font-size: 13px;
+    font-weight: 700;
+
 }
 
-.o-dot .dotted:hover {
+.bottom {
+    position: absolute;
+    top: 86%;
+    left: 60%;
+    transform: translate(-86% -60%);
+    display: flex;
+    column-gap: 8px;
+}
+.bottom-item{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #897483;
+
+
+}
+.bottom-item:nth-child(2){
     background-color: #fff;
-    transition: 0.3s;
-    visibility: visible;
-} 
+}
 /* --------download-section------- */
 .download-section .container{
     padding: 100px 0;
@@ -327,7 +349,7 @@ a{
     padding: 56px 0 110px 0;
 }
 .about-section .container .text{
-    width: 31%;
+    max-width: calc(33% - 1%);
     text-align: center
 }
 .about-section .container .text h2{
@@ -362,7 +384,7 @@ a{
 .last-page .container p{
     text-align: center;
     font-size: 14px;
-    padding: 0 420px;
+    align-items: center;
     font-family: 'Open Sans', sans-serif;
     color: #808080;
 
@@ -374,3 +396,342 @@ a{
 .last-page .container p samp{
     color: #fff;
 }
+
+
+
+
+/* ---------Responsive------- */
+
+
+
+@media screen and (max-width: 960px){
+ .header-menu .menu {
+    display:none;
+ }
+ .manu-icon{
+    display: inline-block;
+ }
+ /* ---banner--- */
+ .benner-section .container h2{
+    font-size: 54px;
+    line-height: 60px;
+    padding: 0 60px;
+    margin-bottom: 34px;
+}
+.benner-section .container p{
+    font-size: 18px;
+    padding: 0 90px;
+    margin-bottom: 70px;
+}
+/* -----service--- */
+.service-section .container .service-item{
+    max-width: calc(50% - 3%);
+    
+    
+}
+/* ------gallery-section---- */
+.gallery-section .gallery-img {
+    max-width: calc(50% - 1px);
+} 
+   .gallery-section .gallery-text h3{
+    margin-top: 60px;
+    margin-bottom: 32px;
+    padding-left: 44px;
+    padding-right: 50px;
+}
+/* ------.Team-section---- */
+.Team-section .container .img-text{
+    max-width:48%;
+
+}
+
+.ad-section .content-itam h3{
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 32px;
+    padding-left: 64px;
+    padding-right: 160px;
+}
+
+.bottom-item{
+    width: 14px;
+    height: 14px;
+   
+
+
+}
+}
+@media screen and (max-width: 754px){
+    .header-section .container .ActiveBox img{
+        width: 80%;
+    }
+    .manu-icon .fa-solid{
+        font-size: 24px;
+    
+    }
+    /* ------benner-section--- */
+    .benner-section .container a{
+        font-size: 14px;
+        padding: 14px 34px;
+    }
+    .benner-section{
+        padding-top: 190px;
+        padding-bottom: 120px;
+    }
+    .benner-section .container h2{
+       font-size: 44px;
+       line-height: 48px;
+       padding: 0 40px;
+       margin-bottom: 32px;
+   }
+   .benner-section .container p{
+       font-size: 16px;
+       padding: 0 50px;
+       margin-bottom: 55px;
+   }
+   /* ---about-section--- */
+   .about-section .container .location p{
+    padding: 0 20px;
+   }
+   .ad-section .content-itam h3{
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ad-section .content-itam p{
+    font-size: 14px;
+    padding-left: 44px;
+
+}
+.bottom {
+    top: 90%;
+}
+.bottom-item{
+    width: 13px;
+    height: 13px;
+}
+   }
+   @media screen and (max-width: 608px){
+    .header-section .container .ActiveBox img{
+        width: 70%;
+    }
+    .manu-icon .fa-solid{
+        font-size: 20px;
+    }
+    .header-section .container{
+        height: 80px;
+    }
+    /* ----banner-section----- */
+    .benner-section .container h2{
+       font-size: 32px;
+       line-height: 36px;
+       padding: 0 30px;
+       margin-bottom: 32px;
+   }
+   .benner-section .container p{
+       font-size: 16px;
+       padding: 0 30px;
+       margin-bottom: 48px;
+   }
+   .benner-section .container a{
+    padding: 8px 15px;
+    font-size: 8px;
+   }
+  
+   /* -------service-section----- */
+   .service-section .container .service-item{
+    max-width: 100%;
+   }
+   .service-section .container .service-item p{
+    padding: 0 60px;
+   }
+/* ----team-section---- */
+   .Team-section .container .img-text{
+    max-width:100%;
+
+    }
+    .ad-section .content-itam{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+     }
+    .ad-section .content-itam h3{
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ad-section .content-itam p{
+        font-size: 12px;
+        padding-left: 44px;
+    
+    }
+    .bottom {
+        top: 90%;
+    }
+    .bottom-item{
+        width: 13px;
+        height: 13px;
+    }
+    .about-section .container .text{
+        max-width: 100%;
+        margin: 50px;
+        text-align: center;
+    }  
+    .about-section .container{
+        display: inline-block;
+    }
+    .about-section .container  h2{
+        font-size: 18px;
+    }
+    .about-section .container p{
+        font-size: 16px;
+    }
+    .last-page .container{
+        padding-left: 10px;
+        padding-right: 10px;
+     }
+     
+    .download-section .container h2{
+        font-size: 30px;
+    }
+    .share-section .container .location p{
+        padding: 0 10px;
+   
+   }
+
+
+     
+   }
+   @media screen and (max-width: 554px){
+    .header-section .container{
+        height: 70px;
+    }
+    .benner-section .container h2{
+       font-size: 20px;
+       line-height: 24px;
+       padding: 0 20px;
+      
+   }
+   .benner-section .container p{
+       font-size: 14px;
+       padding: 0;
+       margin-bottom: 48px;
+   }
+   .service-section .container .service-item p{
+    padding: 0 30px;
+   }
+    /* ----gallery-section--- */
+    .gallery-section .gallery-img {
+        max-width: 100%;
+        align-items: center;
+        
+       } 
+       .gallery-section .gallery-img img{
+        max-width: 100%;
+        
+       } 
+    
+       .gallery-section .gallery-text h3{
+        margin-top: 60px;
+        margin-bottom: 32px;
+        padding-left: 44px;
+        padding-right: 50px;
+       }
+   .download-section .container a{
+    padding: 12px 24px;
+     margin-bottom: 60px;
+     font-size: 11px;
+ 
+ } 
+ .last-page .container{
+     padding-left: 30px;
+     padding-right: 30px;
+  }
+  .last-page .container p{
+     font-size: 13px;
+  }
+  .last-page .container .fa-solid{
+      font-size: 15px;
+  }
+  
+  .last-page .container .samp{
+      font-size: 13px;
+  }
+  
+  .ad-section .content-itam h3{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    }
+    .ad-section .content-itam p{
+        padding-left: 0;
+
+    }
+    .bottom {
+        top: 85%;
+    }
+    .bottom-item{
+        width: 12px;
+        height: 12px;
+
+    }
+
+   }
+   @media screen and (max-width: 400px){
+    .header-section .container{
+        height: 60px;
+    }
+    .benner-section{
+        padding-top: 130px;
+        padding-bottom: 80px;
+    }
+    .benner-section .container h2{
+       font-size: 20px;
+       padding: 0 15 px;
+   }
+   .benner-section .container p{
+       font-size: 14px;
+      
+   }
+   .service-section .container .service-item p{
+    padding: 0 5px;
+   }
+   .ad-section{
+    display: flex;
+    flex-direction: column;
+   }
+   .ad-section .item{
+    max-width: 100%;
+   }
+   .ad-section .item p{
+    margin-bottom: 30px;
+   }
+   
+.download-section .container a{
+    padding: 10px 20px;
+     margin-bottom: 50px;
+ 
+ } 
+ .last-page .container{
+    padding-left: 0;
+    padding-right: 0;
+ }
+ .last-page .container p{
+    font-size: 12px;
+ }
+ .last-page .container .fa-solid{
+     font-size: 15px;
+ }
+ 
+ .last-page .container .sapm {
+     font-size: 12px;
+ }
+   }
