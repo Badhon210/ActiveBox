@@ -1,3 +1,3 @@
-function Responsive(){
-    document.getElementById('header-menu').classList.toggle('active');
+function responsiveManu(){
+    document.getElementById('header-manu').classList.toggle('Active');
 }
