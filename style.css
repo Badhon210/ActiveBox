@@ -411,11 +411,13 @@ a{
 .location-section .full-section .location{
    width: 30%;
 }
-.location-section .full-section .location1 p{
-    padding-left: 50px;
+.location-section .full-section .location1 {
+    padding: 0 140px;
+    text-align: center;
 }
 .location-section .full-section .location3 p{
     text-align: center; 
+    padding: 0 60px;
 }
 .font-awesomeimg .fa-brands{
     font-size: 30px;
@@ -446,6 +448,14 @@ a{
     font-family:  'Raleway', sans-serif;
     color: #666871;
 }
+.lest-para .continer p .fa-solid{
+    font-size: 14px;
+    color: red;
+}
+.lest-para .continer p samp{
+    color: #fff;
+}
+
 /* ........................ lest para end..................  */
 
 
@@ -888,17 +898,44 @@ a{
     }
 }
 /* ......................download-section end...............  */
+/* ........................location-section-start............  */
+@media screen and (max-width: 1000px){
+    .font-awesomeimg .fa-brands{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+  .location-section .full-section .location1 {
+    padding: 0 60px;
+}
+} 
 
+/* .....................location-section end..............  */
+/* ........................location-section-start............  */
+@media screen and (max-width: 850px){
+    .font-awesomeimg .fa-brands{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+  .location-section .full-section .location1 {
+    padding: 0 40px;
+}
+} 
+
+/* .....................location-section end..............  */
 /* ........................location-section-start............  */
  @media screen and (max-width: 670px){
     .font-awesomeimg .fa-brands{
         font-size: 20px;
         padding: 10px 10px;
     }
-  .location-section .full-section .location1 p {
-    padding-left: 20px;
+  .location-section .full-section .location1 {
+    padding: 0 20px;
+}
+.location-section .full-section .location3 {
+    padding: 0 ;
 }
 } 
+
 /* .....................location-section end..............  */
 /* .....................location-section-start............  */
  @media screen and (max-width: 490px){
@@ -910,11 +947,14 @@ a{
     .location-section .full-section .location{
         width: 100%;
      }
+     .location-section .full-section .location1 {
+        padding: 0 120px;
+     }
      .location-section .full-section .location h2{
         margin-bottom: 10px;
   }
   .location-section .full-section .location p{
-    font-size: 17px;
+    font-size: 14px;
 }
   .font-awesomeimg{
     margin-bottom: 30px;
@@ -927,6 +967,30 @@ a{
 }
   }
 /* ........................location-section end..........  */
+/* ........................location-section-start............  */
+@media screen and (max-width: 390px){
+    .font-awesomeimg .fa-brands{
+        font-size:18px;
+        padding: 10px 10px;
+    }
+  .location-section .full-section .location1 {
+    padding: 0 80px;
+}
+} 
+
+/* .....................location-section end..............  */
+/* ........................location-section-start............  */
+@media screen and (max-width: 300px){
+    .font-awesomeimg .fa-brands{
+        font-size: 16px;
+        padding: 8px 8px;
+    }
+  .location-section .full-section .location1 {
+    padding: 0 50px;
+}
+} 
+
+/* .....................location-section end..............  */
 /* .........................lest-para-start.................  */
 @media screen and (max-width: 1160px){
 .lest-para .continer{
