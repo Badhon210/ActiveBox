@@ -259,9 +259,9 @@ a{
     padding-right: 25px;
 }
 .team-section .continer .font-awesome .fa-brands{
-    padding: 10px 15px;
+    padding: 10px 10px;
     border: 1px solid #72787e;
-    font-size: 30px;
+    font-size: 22px;
     color: #72787e;
     
 }
@@ -420,9 +420,9 @@ a{
     padding: 0 60px;
 }
 .font-awesomeimg .fa-brands{
-    font-size: 30px;
-    padding: 15px 15px;
-    border: 2px solid #fff; 
+    font-size: 22px;
+    padding: 12px 12px;
+    border: 1px solid #fff; 
     color: #fff;
     
 }
